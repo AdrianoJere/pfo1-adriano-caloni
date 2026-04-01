@@ -6,8 +6,8 @@
 ![Google Fonts](https://img.shields.io/badge/Google_Fonts-Syne_+_JetBrains_Mono-red?logo=google)
 ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
 
-🌐 **Demo:** [Ver en Vercel](#) ← completar  
-📁 **Repo:** [Ver en GitHub](#) ← completar
+🌐 **Demo:** [Ver en Vercel](https://pfo1-adriano-caloni.vercel.app/)
+📁 **Repo:** [Ver en GitHub](https://github.com/AdrianoJere/pfo1-adriano-caloni)
 
 ---
 
