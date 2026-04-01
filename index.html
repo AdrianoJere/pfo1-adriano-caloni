@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adriano Caloni | Líder Soporte Digital & Dev Backend</title>
+  <!-- Google Fonts: Syne para títulos + JetBrains Mono para código -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER: Logo y título principal del portafolio -->
+  <header id="inicio">
+    <nav>
+      <div class="nav-logo">
+        <span class="bracket">&lt;</span>AC<span class="bracket">/&gt;</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#tarjetas">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#peliculas">Películas</a></li>
+      </ul>
+      <div class="nav-toggle" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-text">
+        <p class="hero-tag">// líder soporte digital & dev backend</p>
+        <h1>Adriano<br /><span class="accent">Caloni</span></h1>
+        <p class="hero-desc">
+          +4 años construyendo soluciones .NET, optimizando APIs y liderando equipos técnicos en el sector financiero.
+        </p>
+        <div class="hero-ctas">
+          <a href="#sobre-mi" class="btn-primary">Conocerme</a>
+          <a href="https://github.com/settings/profile" target="_blank" class="btn-outline">GitHub</a>
+        </div>
+      </div>
+      <!-- Avatar generado a partir de la foto, estilizado con CSS -->
+      <div class="hero-avatar">
+        <div class="avatar-ring">
+          <div class="avatar-img">
+            <img src="img/acaloniOK.png" alt="Adriano Caloni - Líder Soporte Digital" />
+          </div>
+        </div>
+        <div class="avatar-badge">
+          <span class="badge-dot"></span> Disponible para proyectos
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de tecnologías flotante -->
+    <div class="tech-ticker">
+      <div class="ticker-inner">
+        <span>.NET 8</span><span>C#</span><span>T-SQL</span><span>SQL Server</span>
+        <span>APIs REST</span><span>Git</span><span>GitHub</span><span>Postman</span>
+        <span>Scrum</span><span>Kanban</span><span>JIRA</span><span>HTML</span><span>CSS</span>
+        <!-- Repetido para el loop visual -->
+        <span>.NET 8</span><span>C#</span><span>T-SQL</span><span>SQL Server</span>
+        <span>APIs REST</span><span>Git</span><span>GitHub</span><span>Postman</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SECCIÓN SOBRE MÍ: Presentación personal -->
+    <!-- Mejora futura: agregar contador animado de años de experiencia -->
+    <section id="sobre-mi">
+      <div class="section-label">01 &mdash; sobre mí</div>
+      <div class="sobre-mi-grid">
+        <div class="sobre-mi-content">
+          <h2>Hola, soy <span class="accent">Adriano</span> 👋</h2>
+          <p>
+            Desarrollador Backend y <strong>Líder de Soporte Digital</strong> con más de <strong>7 años de experiencia</strong> en tecnología. Especializado en .NET, T-SQL, API integrations y análisis de datos. Actualmente lidero el equipo de soporte en <strong>Banco Coinag S.A.</strong>, con experiencia previa en SG Financial Technology – Ágil Pagos y en <strong>La Segunda Seguros CLSG</strong>.
+          </p>
+          <p>
+            Soy cofundador de <strong>Alcana Labs</strong>, una software factory que construimos junto a mi socia, donde desarrollamos soluciones web y apps a medida. Nuestro primer producto propio es <strong>Mentor+</strong>, una plataforma institucional de mentorías académicas ya en producción en <em>mentormas.com.ar</em>.
+          </p>
+          <p>
+            Mi misión es construir software que sea eficiente, escalable y bien documentado. Creo en las buenas prácticas, en los equipos colaborativos y en seguir aprendiendo todos los días.
+          </p>
+          <div class="sobre-links">
+            <a href="https://mentormas.com.ar/login" target="_blank" class="link-tag">🚀 Mentor+</a>
+            <a href="https://www.instagram.com/alcanalabs/" target="_blank" class="link-tag">⬡ Alcana Labs</a>
+            <a href="https://www.linkedin.com/in/adriano-jeremias-caloni/" target="_blank" class="link-tag">💼 LinkedIn</a>
+            <a href="https://github.com/settings/profile" target="_blank" class="link-tag">🐙 GitHub</a>
+          </div>
+        </div>
+        <div class="sobre-mi-stats">
+          <div class="stat-card">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Años de experiencia</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Empresas + startup</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Líneas de SQL</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">⬡</span>
+            <span class="stat-label">Alcana Labs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS / TARJETAS: Trabajos destacados con Flexbox -->
+    <!-- Mejora futura: conectar con GitHub API para mostrar repos reales -->
+    <section id="tarjetas">
+      <div class="section-label">02 &mdash; proyectos</div>
+      <h2>Trabajos <span class="accent">Destacados</span></h2>
+      <div class="cards-grid">
+
+        <!-- Tarjeta Mentor+ con logo inline -->
+        <div class="card card-img">
+          <div class="card-preview">
+            <img src="img/MentorLogo.png" alt="Mentor+" />
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Next.js · .NET Core · T-SQL · dominio propio</span>
+            <h3>Mentor+</h3>
+            <p>Plataforma institucional de mentorías académicas en producción. Login con DNI, gestión de roles (alumno, mentor, admin), agenda y reservas. Desarrollada junto a mi socia como proyecto real.</p>
+            <div class="card-footer">
+              <span class="card-status live">● Live en mentormas.com.ar</span>
+              <a href="https://mentormas.com.ar/login" target="_blank" class="card-link">Ver →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alcana Labs: software factory propia -->
+        <div class="card card-img">
+          <div class="card-preview card-preview--dark">
+            <img src="img/alcanalab.png" alt="Alcana Labs" />
+          </div>
+          <div class="card-content">
+            <span class="card-tag">Software Factory · Córdoba · Co-fundador</span>
+            <h3>Alcana Labs</h3>
+            <p>Software factory cofundada junto a mi socia. Desarrollo web, apps y soluciones digitales a medida. "Hacemos software con alma. Elegimos crear."</p>
+            <div class="card-footer">
+              <span class="card-status live">● En crecimiento</span>
+              <a href="https://www.instagram.com/alcanalabs/" target="_blank" class="card-link">Instagram →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grupo Coinag: experiencia laboral principal -->
+        <div class="card card-img">
+          <div class="card-preview card-preview--dark">
+            <img src="img/grupocoinag_logo.jfif" alt="Grupo Coinag" />
+          </div>
+          <div class="card-content">
+            <span class="card-tag">.NET 8.0 · T-SQL · ASP.NET Web API · C# · GitLab</span>
+            <h3>Grupo Coinag</h3>
+            <p>Más de 4 años en el grupo. Desarrollo de APIs bancarias integradas con <strong>billeteras virtuales</strong>, cámaras compensadoras y servicios fintech externos. Stored procedures complejos en T-SQL, flujos de onboarding, gestión de CBU/CVU y servicios en producción. Actualmente <strong>Líder de Soporte Digital en Banco Coinag S.A.</strong></p>
+            <div class="card-footer">
+              <span class="card-status live">● Actualidad</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- La Segunda Seguros: experiencia previa -->
+        <div class="card card-img">
+          <div class="card-preview card-preview--dark">
+            <img src="img/lasegunda.png" alt="La Segunda Seguros" />
+          </div>
+          <div class="card-content">
+            <span class="card-tag">JIRA · Análisis de datos · Athento · ZOHO</span>
+            <h3>La Segunda Seguros CLSG</h3>
+            <p>Analista de Soluciones Informáticas y Analista en Gestión Documental. Relevamiento de requerimientos, análisis funcional y administración de plataformas como Podio, Athento y ZOHO Analytics.</p>
+            <div class="card-footer">
+              <span class="card-status">● Experiencia previa</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN HABILIDADES: Stack técnico y tecnologías organizadas en tabla -->
+    <!-- Mejora futura: agregar barras de progreso animadas por nivel de dominio -->
+    <section id="habilidades">
+      <div class="section-label">03 &mdash; habilidades</div>
+      <h2>Stack <span class="accent">Técnico</span></h2>
+      <div class="skills-layout">
+        <div class="skills-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>Tecnologías</th>
+                <th>Nivel</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Backend</td>
+                <td>.NET 3.1 / .NET 8, C#, ASP.NET Web API</td>
+                <td><span class="level senior">Senior</span></td>
+              </tr>
+              <tr>
+                <td>Base de Datos</td>
+                <td>T-SQL, Procedimientos almacenados T-SQL, SQL Server (SSMS), MySQL</td>
+                <td><span class="level senior">Senior</span></td>
+              </tr>
+              <tr>
+                <td>APIs & Integración</td>
+                <td>Desarrollo de API, ASP.NET Web API, Resolución de incidencias</td>
+                <td><span class="level senior">Senior</span></td>
+              </tr>
+              <tr>
+                <td>Data & Analytics</td>
+                <td>Análisis de Big Data, Análisis de datos técnicos</td>
+                <td><span class="level mid">Mid</span></td>
+              </tr>
+              <tr>
+                <td>DevOps & Tools</td>
+                <td>Git, GitHub, GitLab, JIRA, Postman</td>
+                <td><span class="level mid">Mid</span></td>
+              </tr>
+              <tr>
+                <td>Liderazgo</td>
+                <td>Liderazgo de equipos, Scrum, Kanban, Adaptación</td>
+                <td><span class="level mid">Mid</span></td>
+              </tr>
+              <tr>
+                <td>Frontend</td>
+                <td>HTML, CSS, Bootstrap</td>
+                <td><span class="level mid">Mid</span></td>
+              </tr>
+              <tr>
+                <td>Quiero aprender</td>
+                <td>React, TypeScript, Docker, AWS ☁️ (certificación en curso)</td>
+                <td><span class="level learning">En camino</span></td>
+              </tr>
+              <tr>
+                <td>Hobbies</td>
+                <td>Cine, Marvel, series tech, gaming</td>
+                <td><span class="level hobby">Pasión</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="skills-certs">
+          <h3>Certificaciones</h3>
+          <ul class="cert-list">
+            <li>🎓 Técnico Superior en Desarrollo de Software – IFTS N.º 29 (2024-act.)</li>
+            <li>🎓 Técnico Superior en Desarrollo de Software y Multimedia – Esc. Sup. N.º 49 (2020-2022)</li>
+            <li>💻 Desarrollador Web Full Stack Jr – Argentina Programa (2022)</li>
+            <li>📱 Desarrollador de Aplicaciones Móviles – Comunidad IT (2021)</li>
+            <li>🧠 #SéProgramar – Mumuki (2021)</li>
+            <li>🌐 Inglés Técnico para Desarrolladores – Argentina Programa (2022)</li>
+            <li>🌐 Inglés Nivel 1 – CUI (2023)</li>
+            <li>🐘 PHP y MySQL Server – UTN</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO: Formulario básico con validación visual -->
+    <!-- Mejora futura: conectar a un servicio como FormSpree o EmailJS -->
+    <section id="contacto">
+      <div class="section-label">04 &mdash; contacto</div>
+      <h2>Hablemos <span class="accent">🤝</span></h2>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p>¿Tenés un proyecto en mente o querés saber más sobre mi trabajo? Escribime.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="ci-icon">📧</span>
+              <a href="mailto:caloniadrianoj@gmail.com">caloniadrianoj@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">📞</span>
+              <span>341-3758375</span>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <span>Colonia Caroya, Córdoba, AR</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+54 341 xxxxxxx" />
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contame de qué se trata..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Enviar mensaje ✉️</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PELÍCULAS FAVORITAS: Las mejores del cine según Adriano -->
+    <!-- Mejora futura: agregar API de TMDB para traer pósters automáticamente -->
+    <section id="peliculas">
+      <div class="section-label">05 &mdash; películas favoritas</div>
+      <h2>Las mejores <span class="accent">películas</span> de la historia</h2>
+      <p class="section-subtitle">Según el criterio absolutamente objetivo //Adriano Caloni</p>
+      <div class="movies-grid">
+
+        <div class="movie-card">
+          <div class="movie-poster" style="background: linear-gradient(135deg, #8B0000, #1a1a2e);">
+            <span class="movie-emoji">🦸</span>
+          </div>
+          <div class="movie-info">
+            <span class="movie-num">01</span>
+            <h3>Avengers: Endgame</h3>
+            <p class="movie-meta">Marvel Studios · 2019 · Acción / Sci-Fi</p>
+            <p>El cierre épico de 10 años de historia del MCU. Ver a todos los héroes juntos en batalla es uno de los momentos más impactantes del cine moderno. <em>"Avengers... assemble."</em></p>
+            <div class="movie-tags">
+              <span>#Marvel</span><span>#Épica</span><span>#Imprescindible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster" style="background: linear-gradient(135deg, #2d0a52, #7b2d8b);">
+            <span class="movie-emoji">🪄</span>
+          </div>
+          <div class="movie-info">
+            <span class="movie-num">02</span>
+            <h3>Harry Potter y las Reliquias de la Muerte</h3>
+            <p class="movie-meta">Warner Bros · 2011 · Fantasía / Aventura</p>
+            <p>El cierre perfecto de una saga generacional. Toda la saga de Harry Potter es un mundo en sí mismo, pero la batalla final en Hogwarts es pura magia cinematográfica. Imposible elegir solo una parte.</p>
+            <div class="movie-tags">
+              <span>#HarryPotter</span><span>#Saga</span><span>#Generacional</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster" style="background: linear-gradient(135deg, #0d1b2a, #1b4965);">
+            <span class="movie-emoji">⚡</span>
+          </div>
+          <div class="movie-info">
+            <span class="movie-num">03</span>
+            <h3>The Avengers</h3>
+            <p class="movie-meta">Marvel Studios · 2012 · Acción / Sci-Fi</p>
+            <p>La película que demostró que el universo compartido funcionaba. Ver a Iron Man, Thor, Hulk y Cap juntos por primera vez fue un momento histórico que cambió el cine de superhéroes para siempre.</p>
+            <div class="movie-tags">
+              <span>#Marvel</span><span>#Clásico</span><span>#Equipo</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: Información de contacto y redes sociales -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="bracket">&lt;</span>AC<span class="bracket">/&gt;</span>
+        <p>Adriano Caloni · Líder Soporte Digital</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/adriano-jeremias-caloni/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/AdrianoJere" target="_blank">GitHub</a>
+        <a href="https://mentormas.com.ar/login" target="_blank">MentorMas</a>
+        <a href="mailto:caloniadrianoj@gmail.com">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Adriano Caloni · PFO1 – IFTS N.º 29 · Hecho con HTML y CSS 💻</p>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menú mobile
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+
+    // Animación de entrada al hacer scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(el => {
+        if (el.isIntersecting) el.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section, .card, .movie-card, .stat-card').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
