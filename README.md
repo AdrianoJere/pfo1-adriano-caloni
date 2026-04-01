@@ -30,11 +30,11 @@ pfo1-adriano-caloni/
 ├── css/
 │   └── styles.css
 └── img/
-    ├── avatar.jpg
-    ├── mentor-logo.png
-    ├── alcana-logo.png
-    ├── coinag-logo.png
-    └── lasegunda-logo.png
+    ├── ...
+    ├── ...
+    ├── ...
+    ├── ...
+    └── ...
 ```
 
 ---
